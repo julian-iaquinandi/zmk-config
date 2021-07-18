@@ -60,20 +60,20 @@
 
                 num_layer {
 // ┌───┬────────┬────────┬────────┬────────┬────────┐ ┌────────┬────────┬────────┬────────┬────────┬───┐
-// | __|  !     |  @     |  #     |  _     |  %     | |  ___   |  HOME  |  PGDN  |  PGUP  |  END   | __|
+// | __|  F7    |  F8    |  F9    |  F10   |  ___   | |  ___   |  7     |  8     |  9     |  +     | __|
 // ├───┼────────┼────────┼───────-┼────────┼────────┤ ├────────┼────────┼────────┼────────┼────────┼───┤
-// | __|  ?     |  `     |  "     |  '     |  ^     | |  $     |  LEFT  |  DOWN  |  UP    |  RIGHT | __|
+// | __|  F4    |  F5    |  F6    |  F11   |  ___   | |  =     |  4     |  5     |  6     |  -     | __|
 // ├───┼────────┼────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┼────────┼───┤
-// | __|  |     |  [     |  {     |  (     |  &     | |  \     |  )     |  }     |  ]     |  ~     | __|
+// | __|  F1    |  F2    |  F3    |  F12   |  ___   | |  ___   |  1     |  2     |  3     |  *     | __|
 // └─-─┴─-──────┴────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┴────────┴───┘
-//                       | ___    | ___    | ___    | | ___    | ___    | ___    |
+//                       | ___    | ___    |  ___   | |  ___   |  0     | ___    |
 //		         └────────┴────────┴────────┘ └────────┴────────┴────────┘
 
                         bindings = <
-   &trans  &kp F7  &kp F8  &kp F9  &kp F10  &kp PRCNT     &trans     &kp 7  &kp 8  &kp 9  &kp PLUS    &trans
-   &trans  &kp F4  &kp F5  &kp F6  &kp F11  &kp CARET     &kp EQUAL  &kp 4  &kp 5  &kp 6  &kp MINUS   &trans
-   &trans  &kp F1  &kp F2  &kp F3  &kp F12  &kp AMPS      &trans     &kp 1  &kp 2  &kp 3  &kp STAR    &trans
-                           &trans  &trans   &trans        &trans     &trans &trans
+   &trans  &kp F7  &kp F8  &kp F9  &kp F10  &trans     &trans     &kp 7  &kp 8  &kp 9  &kp PLUS    &trans
+   &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans     &kp EQUAL  &kp 4  &kp 5  &kp 6  &kp MINUS   &trans
+   &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans     &trans     &kp 1  &kp 2  &kp 3  &kp STAR    &trans
+                           &trans  &trans   &trans     &trans     &trans &trans
                         >;
                         
                 };
