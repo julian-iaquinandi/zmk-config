@@ -70,9 +70,9 @@
 //		         └────────┴────────┴────────┘ └────────┴────────┴────────┘
 
                         bindings = <
-   &trans  &kp EXCL   &kp AT     &kp HASH  &kp UNDER  &kp PRCNT     &trans    &trans    &trans    &trans    &trans     &trans
-   &trans  &kp QMARK  &kp GRAVE  &kp DQT   &kp SQT    &kp CARET     &kp DLLR  &trans    &trans    &trans    &trans     &trans
-   &trans  &kp PIPE   &kp LBKT   &kp LBRC  &kp LPAR   &kp AMPS      &trans    &kp RPAR  &kp RBRC  &kp RBKT  &kp TILDE  &trans
+   &trans  &kp F7  &kp F8  &kp F9  &kp F10  &kp PRCNT     &trans    &trans    &trans    &trans    &trans     &trans
+   &trans  &kp F4  &kp F5  &kp F6  &kp F11  &kp CARET     &kp DLLR  &trans    &trans    &trans    &trans     &trans
+   &trans  &kp F1  &kp F2  &kp F3  &kp F12  &kp AMPS      &trans    &kp RPAR  &kp RBRC  &kp RBKT  &kp TILDE  &trans
                                  &trans    &trans     &trans        &trans    &trans    &trans
                         >;
                         
