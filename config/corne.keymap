@@ -8,8 +8,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define X &trans
-
 
 / {
         keymap {
@@ -17,15 +15,15 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | TAB |
-// |  TAB |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | TAB |
-// |  TAB |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | TAB |
+// |  ___ |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | ___ |
+// |  ___ |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | ___ |
+// |  ___ |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ___ |
 //                    | GUI | LWR | ENT |   | ESC | SPC  | ALT |
                         bindings = <
 
-   X &kp Q &kp W &kp E &kp R &kp T    &kp Y  &kp U  &kp I     &kp O   &kp P    X
-   X &kp A &kp S &kp D &kp F &kp G    &kp H  &kp J  &kp K     &kp L   &kp SEMI X
-   X &kp Z &kp X &kp C &kp V &kp B    &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH X
+   &trans &kp Q &kp W &kp E &kp R &kp T    &kp Y  &kp U  &kp I     &kp O   &kp P    &trans
+   &trans &kp A &kp S &kp D &kp F &kp G    &kp H  &kp J  &kp K     &kp L   &kp SEMI &trans
+   &trans &kp Z &kp X &kp C &kp V &kp B    &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH &trans
                  &kp LGUI &kp ENTER &kp ENTER   &kp RET &pk SPACE &kp RALT
                         >;
                 };
