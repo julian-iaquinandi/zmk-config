@@ -44,10 +44,10 @@
 
 
                         bindings = <
-   &trans  &kp Q       &kp W       &kp E         &kp R          &kp T        &kp Y    &kp U            &kp I          &kp O       &kp P          &trans
-   &trans  &hm LCMD A  &hm LALT S  &hm LSHIFT D  &hm LCTRL F    &kp G        &kp H    &hm RCTRL J      &hm RSHIFT K   &hm RALT L  &hm RCMD SEMI  &trans
-   &trans  &kp Z       &kp X       &kp C         &kp V          &kp B        &kp N    &kp M            &kp COMMA      &kp DOT     &kp FSLH       &trans
-                                   &kp DEL       &lt NUMS BSPC  &kp RET      &kp ESC  &lt PUNCT SPACE  &trans
+   &trans  &kp Q       &kp W       &kp E         &kp R          &kp T        &kp Y      &kp U            &kp I          &kp O       &kp P          &trans
+   &trans  &hm LCMD A  &hm LALT S  &hm LSHIFT D  &hm LCTRL F    &lt NUM G    &lt NUM H  &hm RCTRL J      &hm RSHIFT K   &hm RALT L  &hm RCMD SEMI  &trans
+   &trans  &kp Z       &kp X       &kp C         &kp V          &kp B        &kp N      &kp M            &kp COMMA      &kp DOT     &kp FSLH       &trans
+                                   &kp DEL       &lt NUMS BSPC  &kp RET      &kp ESC    &lt PUNCT SPACE  &trans
                         >;
                 };
 
@@ -97,7 +97,7 @@
 // ├───┼────────┼────────┼───────-┼────────┼────────┤ ├────────┼────────┼────────┼────────┼────────┼───┤
 // | __|  F4    |  F5    |  F6    |  F11   |  MAC   | |  =     |  4     |  5     |  6     |  -     | __|
 // ├───┼────────┼────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┼────────┼───┤
-// | __|  F1    |  F2    |  F3    |  F12   |  ___   | |  ___   |  1     |  2     |  3     |  *     | __|
+// | __|  F1    |  F2    |  F3    |  F12   |  TAB   | |  ___   |  1     |  2     |  3     |  *     | __|
 // └─-─┴─-──────┴────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┴────────┴───┘
 //                       | ___    | ___    |  ___   | |  ___   |  0     | ___    |
 //		         └────────┴────────┴────────┘ └────────┴────────┴────────┘
