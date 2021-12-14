@@ -47,7 +47,7 @@
    &trans  &kp Q        &kp W       &kp E         &kp R          &kp T        &kp Y       &kp U            &kp I          &kp O       &kp P           &trans
    &trans  &lt PUNCT A  &hm LALT S  &hm LSHIFT D  &hm LCTRL F    &lt NUMS G   &lt NUMS H  &hm RCTRL J      &hm RSHIFT K   &hm RALT L  &lt PUNCT SEMI  &trans
    &trans  &hm LCMD Z   &kp X       &kp C         &kp V          &kp B        &kp N       &kp M            &kp COMMA      &kp DOT     &hm FSLH RCMD   &trans
-                                    &kp DEL       &lt NUMS BSPC  &kp RET      &kp ESC     &lt PUNCT SPACE  &trans
+                                    &kp DEL       &kp NUMS BSPC  &kp RET      &kp ESC     &lt PUNCT SPACE  &trans
                         >;
                 };
 
@@ -77,7 +77,7 @@
 // ├───┼────────┼────────┼───────-┼────────┼────────┤ ├────────┼────────┼────────┼────────┼────────┼───┤
 // | __|  ?     |  `     |  "     |  '     |  ^     | |  $     |  LEFT  |  DOWN  |  UP    |  RIGHT | __|
 // ├───┼────────┼────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┼────────┼───┤
-// | __|  |     |  [     |  {     |  (     |  &     | |  \     |  )     |  }     |  ]     |  ~     | __|
+// | __|  |     |  [     |  {     |  (     |  &     | |  ~     |  )     |  }     |  ]     |  \     | __|
 // └─-─┴─-──────┴────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┴────────┴───┘
 //                       | ___    | ___    | ___    | | ___    | ___    | ___    |
 //		         └────────┴────────┴────────┘ └────────┴────────┴────────┘
@@ -85,10 +85,9 @@
                         bindings = <
    &trans  &kp EXCL   &kp AT     &kp HASH  &kp UNDER  &kp PRCNT        &trans    &kp HOME  &kp PG_DN &kp PG_UP &kp END    &trans
    &trans  &kp QMARK  &kp GRAVE  &kp DQT   &kp SQT    &kp CARET        &kp DLLR  &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans
-   &trans  &kp PIPE   &kp LBKT   &kp LBRC  &kp LPAR   &kp AMPS         &trans    &kp RPAR  &kp RBRC  &kp RBKT  &kp TILDE  &trans
+   &trans  &kp PIPE   &kp LBKT   &kp LBRC  &kp LPAR   &kp AMPS         &kp TILDE &kp RPAR  &kp RBRC  &kp RBKT  &kp BSLH   &trans
                                  &bt BT_CLR  &bt BT_PRV  &bt BT_NXT    &trans    &trans    &trans
                         >;
-                        
                 };
 
                 num_layer {
