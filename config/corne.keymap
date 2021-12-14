@@ -65,8 +65,8 @@
 
                         bindings = <
    &trans  &kp Q        &kp W       &kp E         &kp R          &kp T        &kp Y       &kp U            &kp I          &kp O       &kp P           &trans
-   &trans  &hm LCTRL A  &hm LALT S  &hm LSHIFT D  &hm LCMD F     &lt NUMS G   &lt NUMS H  &hm RCMD J       &hm RSHIFT K   &hm RALT L  &hm RCTRL SEMI  &trans
-   &trans  &kp Z        &kp X       &kp C         &kp V          &kp B        &kp N       &kp M            &kp COMMA      &kp DOT     &kp FSLH        &trans
+   &trans  &lt PUNCT A  &hm LALT S  &hm LSHIFT D  &hm LCMD F     &lt NUMS G   &lt NUMS H  &hm RCMD J       &hm RSHIFT K   &hm RALT L  &lt PUNCT SEMI  &trans
+   &trans  &hm LCTRL Z  &kp X       &kp C         &kp V          &kp B        &kp N       &kp M            &kp COMMA      &kp DOT     &hm RCTRL FSLH  &trans
                                     &kp DEL       &lt NUMS BSPC  &kp RET      &kp ESC     &lt PUNCT SPACE  &trans
                         >;
                 };
