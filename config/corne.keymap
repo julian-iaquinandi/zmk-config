@@ -35,9 +35,9 @@
 // ┌───┬────────┬────────┬────────┬────────┬────────┐ ┌────────┬────────┬────────┬────────┬────────┬───┐
 // | __|  Q     |  W     |  E     |  R     |  T     | |  Y     |  U     |  I     |  O     |  P     | __|
 // ├───┼────────┼────────┼───────-┼────────┼────────┤ ├────────┼────────┼────────┼────────┼────────┼───┤
-// | __|  A/GUI |  S/ALT |  D/SFT |  F/CTRL|  G/NUMS| |  H/NUMS|  J/CTRL|  K/SFT |  L/ALT |  ;/GUI | __|
+// | __|  A/PUNT|  S/ALT |  D/SFT |  F/CTRL|  G/NUMS| |  H/NUMS|  J/CTRL|  K/SFT |  L/ALT |  ;/PUNT| __|
 // ├───┼────────┼────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┼────────┼───┤
-// | __|  Z     |  X     |  C     |  V     |  B     | |  N     |  M     |  ,     |  .     |  /     | __|
+// | __|  Z/CTRL|  X     |  C     |  V     |  B     | |  N     |  M     |  ,     |  .     |  / CTRL| __|
 // └─-─┴─-──────┴────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┴────────┴───┘
 //                       | DEL    |NUMS/BSP| ENT    | | ESC    |PUNCT/SP| LAUNCH |
 //		         └────────┴────────┴────────┘ └────────┴────────┴────────┘
@@ -45,8 +45,8 @@
 
                         bindings = <
    &trans  &kp Q       &kp W       &kp E         &kp R          &kp T        &kp Y       &kp U            &kp I          &kp O       &kp P          &trans
-   &trans  &hm LCMD A  &hm LALT S  &hm LSHIFT D  &hm LCTRL F    &lt NUMS G   &lt NUMS H  &hm RCTRL J      &hm RSHIFT K   &hm RALT L  &hm RCMD SEMI  &trans
-   &trans  &kp Z       &kp X       &kp C         &kp V          &kp B        &kp N       &kp M            &kp COMMA      &kp DOT     &kp FSLH       &trans
+   &trans  &hm PUNT A  &hm LALT S  &hm LSHIFT D  &hm LCTRL F    &lt NUMS G   &lt NUMS H  &hm RCTRL J      &hm RSHIFT K   &hm RALT L  &hm PUNT SEMI  &trans
+   &trans  &hm LCMD Z  &kp X       &kp C         &kp V          &kp B        &kp N       &kp M            &kp COMMA      &kp DOT     &hm LCMD FSLH       &trans
                                    &kp DEL       &lt NUMS BSPC  &kp RET      &kp ESC     &lt PUNCT SPACE  &trans
                         >;
                 };
@@ -55,9 +55,9 @@
 // ┌───┬────────┬────────┬────────┬────────┬────────┐ ┌────────┬────────┬────────┬────────┬────────┬───┐
 // | __|  Q     |  W     |  E     |  R     |  T     | |  Y     |  U     |  I     |  O     |  P     | __|
 // ├───┼────────┼────────┼───────-┼────────┼────────┤ ├────────┼────────┼────────┼────────┼────────┼───┤
-// | __|  A/CTRL|  S/OPT |  D/SFT |  F/CMD |  G/NUMS| |  H/NUMS|  J/CMD |  K/SFT |  L/OPT |  ;/CTRL| __|
+// | __|  A/PUNT|  S/OPT |  D/SFT |  F/CMD |  G/NUMS| |  H/NUMS|  J/CMD |  K/SFT |  L/OPT |  ;/PUNT| __|
 // ├───┼────────┼────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┼────────┼───┤
-// | __|  Z     |  X     |  C     |  V     |  B     | |  N     |  M     |  ,     |  .     |  /     | __|
+// | __|  Z/CTRL|  X     |  C     |  V     |  B     | |  N     |  M     |  ,     |  .     |  / CTRL| __|
 // └─-─┴─-──────┴────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┴────────┴───┘
 //                       | DEL    | BKSP   | ENT    | | ESC    | PUNCT  | LAUNCH |
 //		         └────────┴────────┴────────┘ └────────┴────────┴────────┘
@@ -65,8 +65,8 @@
 
                         bindings = <
    &trans  &kp Q        &kp W       &kp E         &kp R          &kp T        &kp Y       &kp U            &kp I          &kp O       &kp P           &trans
-   &trans  &hm LCTRL A  &hm LALT S  &hm LSHIFT D  &hm LCMD F     &lt NUMS G   &lt NUMS H  &hm RCMD J       &hm RSHIFT K   &hm RALT L  &hm RCTRL SEMI  &trans
-   &trans  &kp Z        &kp X       &kp C         &kp V          &kp B        &kp N       &kp M            &kp COMMA      &kp DOT     &kp FSLH        &trans
+   &trans  &hm PUNCT A  &hm LALT S  &hm LSHIFT D  &hm LCMD F     &lt NUMS G   &lt NUMS H  &hm RCMD J       &hm RSHIFT K   &hm RALT L  &hm PUNCT SEMI  &trans
+   &trans  &hm LCTRL Z  &kp X       &kp C         &kp V          &kp B        &kp N       &kp M            &kp COMMA      &kp DOT     &hm LCTRL FSLH  &trans
                                     &kp DEL       &lt NUMS BSPC  &kp RET      &kp ESC     &lt PUNCT SPACE  &trans
                         >;
                 };
@@ -77,16 +77,16 @@
 // ├───┼────────┼────────┼───────-┼────────┼────────┤ ├────────┼────────┼────────┼────────┼────────┼───┤
 // | __|  ?     |  `     |  "     |  '     |  ^     | |  $     |  LEFT  |  DOWN  |  UP    |  RIGHT | __|
 // ├───┼────────┼────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┼────────┼───┤
-// | __|  |     |  [     |  {     |  (     |  &     | |  \     |  )     |  }     |  ]     |  ~     | __|
+// | __|  |     |  [     |  {     |  (     |  &     | |  ~     |  )     |  }     |  ]     |  \     | __|
 // └─-─┴─-──────┴────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┴────────┴───┘
 //                       | ___    | ___    | ___    | | ___    | ___    | ___    |
 //		         └────────┴────────┴────────┘ └────────┴────────┴────────┘
 
                         bindings = <
-   &trans  &kp EXCL   &kp AT     &kp HASH  &kp UNDER  &kp PRCNT        &trans    &kp HOME  &kp PG_DN &kp PG_UP &kp END    &trans
-   &trans  &kp QMARK  &kp GRAVE  &kp DQT   &kp SQT    &kp CARET        &kp DLLR  &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans
-   &trans  &kp PIPE   &kp LBKT   &kp LBRC  &kp LPAR   &kp AMPS         &trans    &kp RPAR  &kp RBRC  &kp RBKT  &kp TILDE  &trans
-                                 &bt BT_CLR  &bt BT_PRV  &bt BT_NXT    &trans    &trans    &trans
+   &trans  &kp EXCL   &kp AT     &kp HASH  &kp UNDER  &kp PRCNT   &trans    &kp HOME  &kp PG_DN &kp PG_UP &kp END    &trans
+   &trans  &kp QMARK  &kp GRAVE  &kp DQT   &kp SQT    &kp CARET   &kp DLLR  &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans
+   &trans  &kp PIPE   &kp LBKT   &kp LBRC  &kp LPAR   &kp AMPS    &kp TILDE &kp RPAR  &kp RBRC  &kp RBKT  &kp BSLH   &trans
+                                 &trans    &trans     &trans      &trans    &trans    &trans
                         >;
                         
                 };
