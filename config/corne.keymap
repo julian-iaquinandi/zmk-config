@@ -53,11 +53,11 @@
 
                 mac_layer {
 // ┌───┬────────┬────────┬────────┬────────┬────────┐ ┌────────┬────────┬────────┬────────┬────────┬───┐
-// | __|  Q     |  W     |  E     |  R     |  T     | |  Y     |  U     |  I     |  O     |  P     | __|
+// | __| Q      |  W     |  E     |  R     |  T     | |  Y     |  U     |  I     |  O     | P      | __|
 // ├───┼────────┼────────┼───────-┼────────┼────────┤ ├────────┼────────┼────────┼────────┼────────┼───┤
-// | __|  A/CTRL|  S/OPT |  D/SFT |  F/CMD |  G/NUMS| |  H/NUMS|  J/CMD |  K/SFT |  L/OPT |  ;/CTRL| __|
+// | __| A/PUNCT|  S/OPT |  D/SFT |  F/CMD |  G/NUMS| |  H/NUMS|  J/CMD |  K/SFT |  L/OPT | ;/PUNCT| __|
 // ├───┼────────┼────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┼────────┼───┤
-// | __|  Z     |  X     |  C     |  V     |  B     | |  N     |  M     |  ,     |  .     |  /     | __|
+// | __| Z/CTRL |  X     |  C     |  V     |  B     | |  N     |  M     |  ,     |  .     | / CTRL | __|
 // └─-─┴─-──────┴────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┴────────┴───┘
 //                       | DEL    | BKSP   | ENT    | | ESC    | PUNCT  | LAUNCH |
 //		         └────────┴────────┴────────┘ └────────┴────────┴────────┘
@@ -66,7 +66,7 @@
                         bindings = <
    &trans  &kp Q        &kp W       &kp E         &kp R          &kp T        &kp Y       &kp U            &kp I          &kp O       &kp P           &trans
    &trans  &lt PUNT A   &hm LALT S  &hm LSHIFT D  &hm LCMD F     &lt NUMS G   &lt NUMS H  &hm RCMD J       &hm RSHIFT K   &hm RALT L  &lt PUNCT SEMI  &trans
-   &trans  &hm LCTRL A  &kp X       &kp C         &kp V          &kp B        &kp N       &kp M            &kp COMMA      &kp DOT     &hm RCTL FSLH   &trans
+   &trans  &hm LCTL A   &kp X       &kp C         &kp V          &kp B        &kp N       &kp M            &kp COMMA      &kp DOT     &hm RCTL FSLH   &trans
                                     &kp DEL       &lt NUMS BSPC  &kp RET      &kp ESC     &lt PUNCT SPACE  &trans
                         >;
                 };
