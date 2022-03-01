@@ -41,6 +41,11 @@
                       key-positions = <13 22>;
                       bindings = <&kp ESC>;
                   };
+                  combo_to_nums {
+                      timeout-ms = <50>;
+                      key-positions = <37 38>;
+                      bindings = <&to 3>;
+                  };
                 };
         };
 
@@ -63,7 +68,7 @@
    &trans  &kp Q       &kp W       &kp E         &kp R          &kp T        &kp Y       &kp U            &kp I          &kp O       &kp P          &trans
    &trans  &hm LCMD A  &hm LALT S  &hm LSHIFT D  &hm LCTRL F    &lt NUMS G   &lt NUMS H  &hm RCTRL J      &hm RSHIFT K   &hm RALT L  &hm RCMD SEMI  &trans
    &trans  &kp Z       &kp X       &kp C         &kp V          &kp B        &kp N       &kp M            &kp COMMA      &kp DOT     &kp FSLH       &trans
-                                   &kp &trans    &lt NUMS BSPC  &kp RET      &trans      &lt PUNCT SPACE  &trans
+                                   &kp &trans    &lt NUMS BSPC  &kp RET      &to 2       &lt PUNCT SPACE  &trans
                         >;
                 };
 
