@@ -33,19 +33,19 @@
 // ┌───┬────────┬────────┬────────┬────────┬────────┐ ┌────────┬────────┬────────┬────────┬────────┬───┐
 // | __|  Q     |  W     |  E     |  R     |  T     | |  Y     |  U     |  I     |  O     |  P     | __|
 // ├───┼────────┼────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┼────────┼───┤
-// | __|  A/PUNC|  S/ALT |  D/SFT |  F/CTRL|  G/NUMS| |  H/NUMS|  J/CTRL|  K/SFT |  L/ALT |  ;/PUNC| __|
+// | __|  A/WIN |  S/ALT |  D/SFT |  F/CTRL|  G/NUMS| |  H/NUMS|  J/CTRL|  K/SFT |  L/ALT |  ;/WIN | __|
 // ├───┼────────┼────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┼────────┼───┤
-// | __|  Z/WIN |  X     |  C     |  V     |  B     | |  N     |  M     |  ,     |  .     |  / WIN | __|
+// | __|  Z     |  X     |  C     |  V     |  B     | |  N     |  M     |  ,     |  .     |  /     | __|
 // └───┴────────┴────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┴────────┴───┘
 //                       | ___    |NUMS/BSP| ENT    | | ESC    |PUNCT/SP| ___    |
 //		                   └────────┴────────┴────────┘ └────────┴────────┴────────┘
 
 
                         bindings = <
-   &trans  &kp Q        &kp W       &kp E         &kp R          &kp T        &kp Y       &kp U            &kp I          &kp O       &kp P           &trans
-   &trans  &lt PUNCT A  &hm LALT S  &hm LSHIFT D  &hm LCTRL F    &lt NUMS G   &lt NUMS H  &hm RCTRL J      &hm RSHIFT K   &hm RALT L  &lt PUNCT SEMI  &trans
-   &trans  &hm LCMD Z   &kp X       &kp C         &kp V          &kp B        &kp N       &kp M            &kp COMMA      &kp DOT     &hm RCMD FSLH  &trans
-                                    &kp &trans    &lt NUMS BSPC  &kp RET      &kp ESC     &lt PUNCT SPACE  &trans
+   &trans  &kp Q       &kp W       &kp E         &kp R          &kp T        &kp Y       &kp U            &kp I          &kp O       &kp P          &trans
+   &trans  &hm LCMD A  &hm LALT S  &hm LSHIFT D  &hm LCTRL F    &lt NUMS G   &lt NUMS H  &hm RCTRL J      &hm RSHIFT K   &hm RALT L  &hm RCMD SEMI  &trans
+   &trans  &kp Z       &kp X       &kp C         &kp V          &kp B        &kp N       &kp M            &kp COMMA      &kp DOT     &kp FSLH       &trans
+                                   &kp &trans    &lt NUMS BSPC  &kp RET      &kp ESC     &lt PUNCT SPACE  &trans
                         >;
                 };
 
@@ -53,9 +53,9 @@
 // ┌───┬────────┬────────┬────────┬────────┬────────┐ ┌────────┬────────┬────────┬────────┬────────┬───┐
 // | __|  Q     |  W     |  E     |  R     |  T     | |  Y     |  U     |  I     |  O     |  P     | __|
 // ├───┼────────┼────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┼────────┼───┤
-// | __|  A/PUNC|  S/OPT |  D/SFT |  F/CMD |  G/NUMS| |  H/NUMS|  J/CMD |  K/SFT |  L/OPT |  ;/PUNC| __|
+// | __|  A/CTL |  S/OPT |  D/SFT |  F/CMD |  G/NUMS| |  H/NUMS|  J/CMD |  K/SFT |  L/OPT |  ;/CTL | __|
 // ├───┼────────┼────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┼────────┼───┤
-// | __|  Z/CTRL|  X     |  C     |  V     |  B     | |  N     |  M     |  ,     |  .     |  / CTRL| __|
+// | __|  Z     |  X     |  C     |  V     |  B     | |  N     |  M     |  ,     |  .     |  /     | __|
 // └───┴────────┴────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┴────────┴───┘
 //                       | ___    |NUMS/BSP| ENT    | | ESC    |PUNCT/SP| ___    |
 //		                   └────────┴────────┴────────┘ └────────┴────────┴────────┘
@@ -63,8 +63,8 @@
 
                         bindings = <
    &trans  &kp Q        &kp W       &kp E         &kp R          &kp T        &kp Y       &kp U            &kp I          &kp O       &kp P           &trans
-   &trans  &lt PUNCT A  &hm LALT S  &hm LSHIFT D  &hm LCMD F     &lt NUMS G   &lt NUMS H  &hm RCMD J       &hm RSHIFT K   &hm RALT L  &lt PUNCT SEMI  &trans
-   &trans  &hm LCTRL Z  &kp X       &kp C         &kp V          &kp B        &kp N       &kp M            &kp COMMA      &kp DOT     &hm RCTRL FSLH  &trans
+   &trans  &hm LCTRL A  &hm LALT S  &hm LSHIFT D  &hm LCMD F     &lt NUMS G   &lt NUMS H  &hm RCMD J       &hm RSHIFT K   &hm RALT L  &hm LCTRL SEMI  &trans
+   &trans  &kp Z        &kp X       &kp C         &kp V          &kp B        &kp N       &kp M            &kp COMMA      &kp DOT     &kp FSLH        &trans
                                     &kp DEL       &lt NUMS BSPC  &kp RET      &kp ESC     &lt PUNCT SPACE  &trans
                         >;
                 };
