@@ -9,9 +9,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT 0
-#define MAC     1
-#define PUNCT   2
-#define NUMS    3
+#define PUNCT   1
+#define NUMS    2
 
 / {
         behaviors {
@@ -95,7 +94,7 @@
                         bindings = <
    &trans  &kp F7  &kp F8  &kp F9  &kp F10  &trans     &trans     &kp N7  &kp N8  &kp N9  &kp PLUS    &trans
    &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans     &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp MINUS   &trans
-   &trans  &kp F1  &kp F2  &kp F3  &kp F12  &to 3      &kp TAB    &kp N1  &kp N2  &kp N3  &kp STAR    &trans
+   &trans  &kp F1  &kp F2  &kp F3  &kp F12  &to 2      &kp TAB    &kp N1  &kp N2  &kp N3  &kp STAR    &trans
                            &trans  &trans   &trans     &trans     &kp N0  &trans
                         >;
                         
