@@ -30,11 +30,6 @@
                       key-positions = <37 40>;
                       bindings = <&to 0>;
                   };
-                  combo_esc {
-                      timeout-ms = <50>;
-                      key-positions = <13 22>;
-                      bindings = <&kp ESC>;
-                  };
                 };
         };
 
@@ -49,15 +44,15 @@
 // ├───┼────────┼────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┼────────┼───┤
 // | __|  Z     |  X     |  C     |  V     |  B     | |  N     |  M     |  ,     |  .     |  /     | __|
 // └───┴────────┴────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┴────────┴───┘
-//                       | ___    |NUMS/BSP| ENT    | | ___    |PUNCT/SP| ___    |
+//                       | ___    |NUMS/BSP| ENT    | | ESC    |PUNCT/SP| ___    |
 //		                   └────────┴────────┴────────┘ └────────┴────────┴────────┘
 
 
                         bindings = <
-   &trans  &kp Q       &kp W       &kp E         &kp R          &kp T        &kp Y       &kp U            &kp I          &kp O       &kp P          &trans
-   &trans  &hm LCMD A  &hm LALT S  &hm LSHIFT D  &hm LCTRL F    &lt NUMS G   &lt NUMS H  &hm RCTRL J      &hm RSHIFT K   &hm RALT L  &hm RCMD SEMI  &trans
-   &trans  &kp Z       &kp X       &kp C         &kp V          &kp B        &kp N       &kp M            &kp COMMA      &kp DOT     &kp FSLH       &trans
-                                   &kp &trans    &lt NUMS BSPC  &kp RET      &to 2       &lt PUNCT SPACE  &trans
+   &trans  &kp Q       &kp W       &kp E         &kp R          &kp T         &kp Y       &kp U            &kp I          &kp O       &kp P          &trans
+   &trans  &hm LCMD A  &hm LALT S  &hm LSHIFT D  &hm LCTRL F    &lt NUMS G    &lt NUMS H  &hm RCTRL J      &hm RSHIFT K   &hm RALT L  &hm RCMD SEMI  &trans
+   &trans  &kp Z       &kp X       &kp C         &kp V          &kp B         &kp N       &kp M            &kp COMMA      &kp DOT     &kp FSLH       &trans
+                                   &kp &trans    &lt NUMS BSPC  &kp RET       &kp ESC     &lt PUNCT SPACE  &trans
                         >;
                 };
 
@@ -69,36 +64,36 @@
 // ├───┼────────┼────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┼────────┼───┤
 // | __|  |     |  [     |  {     |  (     |  &     | |  ~     |  )     |  }     |  ]     |  BSLSH | __|
 // └───┴────────┴────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┴────────┴───┘
-//                       | ___    | ___    | ___    | | ___    | ___    | ___    |
+//                       | ___    | ___    | ___    | | PUNCT  | ___    | ___    |
 //		                   └────────┴────────┴────────┘ └────────┴────────┴────────┘
 
                         bindings = <
    &trans  &kp EXCL   &kp AT     &kp HASH  &kp UNDER  &kp PRCNT        &kp CAPS  &kp HOME  &kp PG_DN &kp PG_UP &kp END    &trans
    &trans  &kp QMARK  &kp GRAVE  &kp DQT   &kp SQT    &kp CARET        &kp DLLR  &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans
    &trans  &kp PIPE   &kp LBKT   &kp LBRC  &kp LPAR   &kp AMPS         &kp TILDE &kp RPAR  &kp RBRC  &kp RBKT  &kp BSLH   &trans
-                                 &trans    &trans     &trans           &trans    &trans    &trans
+                                 &trans    &trans     &trans           &to 1     &trans    &trans
                         >;
                 };
 
                 num_layer {
 // ┌───┬────────┬────────┬────────┬────────┬────────┐ ┌────────┬────────┬────────┬────────┬────────┬───┐
-// | __|  F7    |  F8    |  F9    |  F10   |        | |  ___   |  7     |  8     |  9     |  +     | __|
+// | __|  F7    |  F8    |  F9    |  F10   |  ___   | |  ___   |  7     |  8     |  9     |  +     | __|
 // ├───┼────────┼────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┼────────┼───┤
-// | __|  F4    |  F5    |  F6    |  F11   |        | |  =     |  4     |  5     |  6     |  -     | __|
+// | __|  F4    |  F5    |  F6    |  F11   |  ___   | |  =     |  4     |  5     |  6     |  -     | __|
 // ├───┼────────┼────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┼────────┼───┤
-// | __|  F1    |  F2    |  F3    |  F12   |  NUMS  | |  TAB   |  1     |  2     |  3     |  *     | __|
+// | __|  F1    |  F2    |  F3    |  F12   |  ___   | |  TAB   |  1     |  2     |  3     |  *     | __|
 // └───┴────────┴────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┴────────┴───┘
-//                       | ___    | ___    |  ___   | |  ___   |  0     | ___    |
+//                       | ___    | ___    |  NUMS  | |  ___   |  0     | ___    |
 //		                   └────────┴────────┴────────┘ └────────┴────────┴────────┘
 
                         bindings = <
    &trans  &kp F7  &kp F8  &kp F9  &kp F10  &trans     &trans     &kp N7  &kp N8  &kp N9  &kp PLUS    &trans
    &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans     &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp MINUS   &trans
-   &trans  &kp F1  &kp F2  &kp F3  &kp F12  &to 2      &kp TAB    &kp N1  &kp N2  &kp N3  &kp STAR    &trans
-                           &trans  &trans   &trans     &trans     &kp N0  &trans
+   &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans     &kp TAB    &kp N1  &kp N2  &kp N3  &kp STAR    &trans
+                           &trans  &trans   &to 2      &trans     &kp N0  &trans
                         >;
                         
                 };
                
         };
-};
+}; 
