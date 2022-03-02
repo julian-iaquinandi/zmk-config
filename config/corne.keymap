@@ -90,7 +90,7 @@
    &trans  &kp F7  &kp F8  &kp F9  &kp F10  &kp C_PREV  &kp C_NEXT &kp N7  &kp N8  &kp N9  &kp PLUS    &trans
    &trans  &kp F4  &kp F5  &kp F6  &kp F11  &kp C_PP    &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp MINUS   &trans
    &trans  &kp F1  &kp F2  &kp F3  &kp F12  &kp TAB     &kp TAB    &kp N1  &kp N2  &kp N3  &kp STAR    &trans
-                           &trans  &trans   &trans      &to 2      &kp N0  &trans
+                           &trans  &trans   &to 2       &to 2      &kp N0  &trans
                         >;
                         
                 };
